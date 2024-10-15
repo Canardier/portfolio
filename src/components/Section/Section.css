@@ -1,0 +1,16 @@
+.section {
+    min-height: 100vh; /* Chaque section prend toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1e272e;
+    color: #040507;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
