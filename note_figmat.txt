@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=BtQyFtaSaEE
+
+shift+A sur un texte pour le transformer en frame (possibilité d'en faire un button)
+alt+deplacement sur un element pour le copier et déplacer la copie directement

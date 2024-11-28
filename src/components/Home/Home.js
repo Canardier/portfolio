@@ -3,22 +3,58 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <section className="home-section">
-            <div className="home-content">
-                <h1>Bienvenue sur mon portfolio</h1>
-                <p>
-                    Je suis <strong>Joffrey Studer</strong>, architecte en ingénierie système et développement web. Passionné par la technologie et l'innovation, j'accompagne les entreprises dans la création de solutions numériques robustes et sur mesure.
-                </p>
+        <section id="about" className="about-section">
+
+            <div className='hover_background'>
+                <p className='text-5xl w-auto rounded-md py-10 text-center uppercase text-white'>Home</p>
+
+                <p className='slogan text-4xl w-auto rounded-md py-20 text-center uppercase text-white'>Alone we are fast, Together we go far.</p>
             </div>
-            <div className="home-photo-container">
-                <img src="me.jpg" alt="Joffrey Studer" className="home-photo" />
-                <div className="social-links">
-                    <a href="https://github.com/Canardier" target="_blank" rel="noopener noreferrer">
-                        <img src="/portfolio/github.png" alt="GitHub" className="social-icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/studer-joffrey-274466186/" target="_blank" rel="noopener noreferrer">
-                        <img src="/portfolio/linkedin.png" alt="LinkedIn" className="social-icon" />
-                    </a>
+
+            <p className='whabout text-4xl w-auto rounded-md text-center uppercase'>What about</p>
+            {/* <div className="wrap_element md:flex justify-center sm:grid sm:grid-cols-4 sm:flex sm:gap-3">
+                <div className='Api px-10 '>
+                    <img alt="image qui designe une api" src="/Trust_logo/api.svg" className="h-20 w-auto" />
+                    <p className='md:text-center'>Api building</p>
+                </div>
+                <div className='Trust justify-center px-10'>
+                    <img alt="image d'une pile" src="/Trust_logo/poignee-de-main.svg" className="h-20 w-auto" />
+                    <p className='md:text-center'>Trust</p>
+                </div>
+                <div className='Architecture justify-center px-10'>
+                    <img alt="image d'une pile" src="/Trust_logo/couches.svg" className="h-20 w-auto px-1" />
+                    <p className='md:text-center'>Architecture</p>
+                </div>
+                <div className='Containerisation px-10'>
+                    <img alt="Image de baleine" src="/Trust_logo/baleine.svg" className="h-20 w-auto px-3" />
+                    <p className='md:text-center'>Containerisation</p>
+                </div>
+                <div className='Human px-10'>
+                    <img alt="Quorix" src="/Trust_logo/picpersonnes-remplies-big.svg" className="h-20 w-auto px-3" />
+                    <p className='md:text-center'>Human expertise</p>
+                </div>
+            </div> */}
+
+            <div className="wrap_element md:flex justify-center grid grid-cols-3 gap-3">
+                <div className='Api md:px-10 px-5'>
+                    <img alt="image qui designe une api" src="/Trust_logo/api.svg" className="h-20 w-auto" />
+                    <p className='md:text-center'>Api building</p>
+                </div>
+                <div className='Trust justify-center md:px-10 px-5'>
+                    <img alt="image d'une pile" src="/Trust_logo/poignee-de-main.svg" className="h-20 w-auto" />
+                    <p className='md:text-center'>Trust</p>
+                </div>
+                <div className='Architecture justify-center md:px-10 px-5'>
+                    <img alt="image d'une pile" src="/Trust_logo/couches.svg" className="h-20 w-auto md:px-1" />
+                    <p className='md:text-center'>Architecture</p>
+                </div>
+                <div className='Containerisation md:px-10 px-5'>
+                    <img alt="Image de baleine" src="/Trust_logo/baleine.svg" className="h-20 w-auto md:px-3" />
+                    <p className='md:text-center'>Containerisation</p>
+                </div>
+                <div className='Human md:px-10 px-5 col-end-4'>
+                    <img alt="Quorix" src="/Trust_logo/picpersonnes-remplies-big.svg" className="h-20 w-auto md:px-3" />
+                    <p className='md:text-center'>Human expertise</p>
                 </div>
             </div>
         </section>

@@ -1,61 +1,20 @@
-.about-section {
-    padding: 50px;
-    background-color: #1e272e;
-    color: #f5f6fa;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; /* Assure que le padding est bien pris en compte */
+
+.stack-icons {
+    width: 35px;
+    height: 40px;
 }
 
-.about-container {
-    display: flex;
-    flex-wrap: wrap; /* Permet au contenu de se réorganiser si l'espace est trop restreint */
-    width: 100%;
-    max-width: 1200px;
-    gap: 50px; /* Espace entre le texte et le titre */
+.picme {
+    width: 250px;
+    height: 400px;
 }
 
-.about-text {
-    flex: 2; /* Le texte prend plus de place */
-    font-size: 1.2rem;
-    line-height: 1.8;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap; /* Assure que le texte s'adapte mieux aux petits écrans */
-    word-wrap: break-word; /* Gère les coupures de mots longs */
+.icon {
+    width: 45px;
+    height: 50px;
 }
 
-.about-title-container {
-    flex: 1; /* Le titre prend moins de place */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.about-title {
-    font-size: 3rem;
-    color: #4cd137;
-    text-align: right; /* Titre aligné à droite */
-}
-
-/* Ajout d'une règle de responsive design pour les écrans plus petits */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-title-container {
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .about-text {
-        justify-content: center;
-        text-align: center;
-    }
+.icon-dl {
+    width: 75px;
+    height: 80px;
 }
