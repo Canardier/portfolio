@@ -22,6 +22,9 @@ const Projects = () => {
 
     return (
         <section id="projects" className="projects-section">
+            <div className='all_background'>
+                <p className='text-5xl w-auto font-bold rounded-md py-10 text-center uppercase text-white'>Projects</p>
+            </div>
             <div className="projects-container">
                 <div className="projects-title-container">
                     <h1 className="projects-title">Mes Projets</h1>

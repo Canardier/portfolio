@@ -1,0 +1,59 @@
+.grid-view {
+    width: 90%;
+    height: auto;
+    background-color: red;
+    border-radius: 25px;
+    opacity: 50%;
+}
+
+.contact-infos {
+    margin-top: 5%;
+}
+
+.logo-malt {
+    height: 43px;
+    width: 150px;
+}
+
+.logo-linkedin {
+    height: 43px;
+    width: 150px;
+}
+
+.logo-github {
+    margin-top: -10px;
+    height: 62px;
+    width: 150px;
+}
+
+.middle-barre {
+    background-color: black;
+    height: 474px;
+    width: 5px;
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+    .contact-logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .sm-hidden {
+        visibility: hidden;
+    }
+
+    .sm-barre {
+        background-color: black;
+        height: 5px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

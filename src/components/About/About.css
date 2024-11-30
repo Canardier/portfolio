@@ -1,3 +1,6 @@
+.container {
+    margin-top: -50px;
+}
 
 .stack-icons {
     width: 35px;
@@ -5,8 +8,8 @@
 }
 
 .picme {
-    width: 250px;
-    height: 400px;
+    width: 220px;
+    height: 394px;
 }
 
 .icon {
@@ -17,4 +20,60 @@
 .icon-dl {
     width: 75px;
     height: 80px;
+}
+
+.trust_col {
+    margin-top: 100px;
+}
+
+.stack_col {
+    margin-top: 100px;
+}
+
+.formation_col {
+    margin-top: -230px;
+}
+
+@media (max-width: 1000px) {
+    .all_background {
+        background-image: url('/public/purple.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 345px;
+        clip-path: polygon(0 0, 100% 0, 100% 40%, 80% 50%, 50% 60%, 20% 50%, 0 40%);
+        /* (HL, HR, MR, LR, MM, LG, MG, HG) */
+    }
+
+    .picme {
+        height: 300px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stack_col {
+        margin-top: 50px;
+    }
+
+    .stack_technique {
+        margin-left: 75px;
+    }
+
+    .formation_col {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 40px;
+    }
+
+    .trust_col {
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .exp_col {
+        margin-top: 50px;
+        margin-left: 40px;
+    }
 }

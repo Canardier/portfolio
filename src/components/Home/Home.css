@@ -1,0 +1,45 @@
+.hover_background {
+    background-image: url('/public/purple.jpg');
+    background-size: 100% 120%;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    background-position: bottom;
+    height: 615px;
+    
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 80% 70%, 50% 80%, 20% 70%, 0 50%);
+                        /*  */
+}
+
+.whabout {
+    position: relative;
+    top: -70px;
+}
+
+@media (max-width: 1000px) {
+    .hover_background {
+        background-image: url('/public/purple.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 615px;
+        clip-path: polygon(0 0, 100% 0, 100% 40%, 80% 50%, 50% 60%, 20% 50%, 0 40%);
+                            /* (HL, HR, MR, LR, MM, LG, MG, HG) */
+    }
+
+    .whabout {
+        position: relative;
+        top: -205px;
+        /* height: 50px; */
+    }
+
+    .wrap_element {
+        position: relative;
+        margin-top: -150px;
+    }
+
+    .slogan {
+        position: relative;
+        top: -80px;
+        font-size: 30px;
+    }
+}
