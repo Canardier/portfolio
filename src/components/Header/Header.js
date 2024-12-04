@@ -6,9 +6,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/About' },
-    { name: 'Projects', href: '/Projects' },
-    { name: 'Contact', href: '/Contact' },
+    { name: 'About', href: '/#/About' },
+    { name: 'Projects', href: '/#/Projects' },
+    { name: 'Contact', href: '/#/Contact' },
 ]
 
 function Navbar(...classes) {
@@ -37,7 +37,7 @@ export default function Header() {
                         <div className="flex shrink-0 items-center">
                             <img
                                 alt="Quorix"
-                                src="/Trust_logo/canard.png"
+                                src={`${process.env.PUBLIC_URL}/Trust_logo/canard.png`}
                                 className="h-8 w-auto"
                             />
                             <p className="h-8 w-auto rounded-md px-3 py-2 text-sm font-medium">Studer J.</p>
