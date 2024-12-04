@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 
 /*ROOTING*/
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 
 
 /*COMPONENTS*/
@@ -14,18 +14,33 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'; 
 
 
+// function App() {
+//     return (
+//         <BrowserRouter basename="/portfolio">
+//             <Header />
+//             <Routes>
+//                 <Route path="/" element={<Home />} />
+//                 <Route path="/about" element={<About />} />
+//                 <Route path="/contact" element={<Contact />} />
+//                 <Route path="/Projects" element={<Projects />} />
+//             </Routes>
+//             <Footer />
+//         </BrowserRouter>
+//     );
+// }
+
 function App() {
     return (
-        <BrowserRouter basename="/portfolio">
+        <HashRouter>
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/Projects" element={<Projects />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
