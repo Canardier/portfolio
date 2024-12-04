@@ -37,7 +37,7 @@ const About = () => {
                     <img class="picme" src='me.jpg' />
                 </div>
                 <div className="md:col-start-3 md:col-start-3 md:col-start-3 md:col-span-2 text-center md:text-left">
-                    <p className='text-2xl'>Architect in systems engineering and web development. Passionate about technology and innovation, I offer my services to support companies and individuals in the creation of robust and tailor-made digital solutions. Your idea of value, allow me to shed light on it.</p>
+                    <p className='text-2xl'>Architect in systems engineering and web development. Passionate about technology and innovation, I offer my services to support companies and individuals in the creation of robust and custom digital solutions. Your idea have value, let me turn light on it.</p>
                     {/* Picture in mobile different place */}
                     <img className="picme sm:col-start-3 md:hidden" src='me.jpg' />
 

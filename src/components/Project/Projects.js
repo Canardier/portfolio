@@ -25,7 +25,7 @@ const Projects = () => {
             <div className='all_background'>
                 <p className='text-5xl w-auto font-bold rounded-md py-10 text-center uppercase text-white'>Projects</p>
             </div>
-            <div className="projects-container">
+            {/* <div className="projects-container">
                 <div className="projects-title-container">
                     <h1 className="projects-title">Mes Projets</h1>
                 </div>
@@ -38,7 +38,8 @@ const Projects = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
+            <div className='uppercase text-7xl text-center'><p>Coming soon</p> <p className='font-bold'>with your project</p></div>
         </section>
     );
 };

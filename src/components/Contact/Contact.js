@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                'service_4qye4qy', // Remplacez par votre Service ID EmailJS
+                'template_cztlu5o', // Remplacez par votre Template ID EmailJS
+                form.current,
+                'PFT7BmW6JL3LSSobV' // Remplacez par votre Clé Publique EmailJS
+            )
+            .then(
+                (result) => {
+                    console.log('Email envoyé :', result.text);
+                    alert('Message envoyé avec succès !');
+                },
+                (error) => {
+                    console.error('Erreur lors de l\'envoi :', error.text);
+                    alert('Une erreur est survenue. Veuillez réessayer.');
+                }
+            );
+    };
+
     return (
         <section className="contact-section">
             <div className='all_background'>
@@ -32,7 +58,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='sm-barre md:hidden block'></div>
-                <form action="#" method="POST" className="sm:flex-col md:col-start-6 md:col-span-2 grid md:grid-cols-8 md:gap-2 grid-cols-1">
+                <form action="#" ref={form} method="POST" onSubmit={sendEmail} className="sm:flex-col md:col-start-6 md:col-span-2 grid md:grid-cols-8 md:gap-2 grid-cols-1">
                     {/* First line */}
                     <div className='md:col-start-1 md:col-span-4 col-span-2'>
                         <label htmlFor="full-name" className="block text-sm/6 font-semibold text-gray-900">
@@ -44,6 +70,7 @@ const Contact = () => {
                             type="text"
                             autoComplete="given-name"
                             className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                            required
                         />
                     </div>
                     <div className='md:col-start-5 md:col-span-4'>
@@ -68,10 +95,11 @@ const Contact = () => {
                             type="email"
                             autoComplete="given-name"
                             className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                            required
                         />
                     </div>
                     <div className='col-start-1 md:col-span-8'>
-                        <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-900">
+                        <label htmlFor="message" name="user_email" className="block text-sm/6 font-semibold text-gray-900">
                             Message
                         </label>
                         <textarea
@@ -80,6 +108,7 @@ const Contact = () => {
                             rows={4}
                             className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             defaultValue={''}
+                            required
                         />
                     </div>
                     <div className="md:col-start-3 md:col-span-4 col-start-1 md:mt-10 my-10">

@@ -1,8 +1,10 @@
 {
-  "name": "mon-portfolio",
+  "homepage": "https://canardier.github.io/portfolio",
+  "name": "studer_j-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@material-tailwind/react": "^2.1.10",
@@ -10,8 +12,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.21.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
     "framer-motion": "^11.11.9",
     "list-react-files": "^0.2.0",
+    "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
@@ -25,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "tailwindcss": "^3.4.15"
   }
 }
