@@ -1,5 +1,4 @@
 {
-  "homepage": "https://canardier.github.io/portfolio/",
   "name": "studer_j-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -28,11 +27,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
