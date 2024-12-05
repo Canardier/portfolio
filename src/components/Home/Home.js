@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <section id="about" className="about-section">
+        <section id="about" className="about-section pb-[calc(40px+6rem)]">
 
             <div className='hover_background'>
                 <p className='text-5xl w-auto font-bold rounded-md py-10 text-center uppercase text-white'>Home</p>

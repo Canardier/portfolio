@@ -17,7 +17,7 @@ const About = () => {
     // If page is != Home, hover_background size go to 190px
 
     return (
-        <section class="home-section">
+        <section class="home-section pb-[calc(40px+3rem)]">
 
             <div className='all_background'>
                 <p className='text-5xl w-auto rounded-md py-10 text-center uppercase font-bold text-white'>About</p>

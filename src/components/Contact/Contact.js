@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact-section">
+        <section className="contact-section pb-[calc(40px+3rem)]">
             <div className='all_background'>
                 <p className='text-5xl w-auto rounded-md py-10 text-center font-bold uppercase text-white'>Contact</p>
             </div>
