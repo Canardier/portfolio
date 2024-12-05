@@ -37,7 +37,7 @@ export default function Header() {
                         <div className="flex shrink-0 items-center">
                             <img
                                 alt="Quorix"
-                                src={`${process.env.PUBLIC_URL}/Trust_logo/canard.png`}
+                                src={`${process.env.PUBLIC_URL}/mylogo/canard.png`}
                                 className="h-8 w-auto"
                             />
                             <p className="h-8 w-auto rounded-md px-3 py-2 text-sm font-medium">Studer J.</p>
