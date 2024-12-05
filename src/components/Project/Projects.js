@@ -21,7 +21,7 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="projects-section">
+        <section id="projects" className="projects-sectionv min-h-screen">
             <div className='all_background'>
                 <p className='text-5xl w-auto font-bold rounded-md py-10 text-center uppercase text-white'>Projects</p>
             </div>
