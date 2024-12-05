@@ -44,7 +44,7 @@ const About = () => {
                     <div className='trust_col'>
                         <div className='grid md:grid-cols-4 sm:grid-cols-2 sm:gap-1'>
                             <div className="md:col-start-1 md:col-span-1 sm:col-start-1">
-                                <img alt="image qui designe une api" src="/Trust_logo/api.svg" className="h-10 w-auto px-9" />
+                                <img alt="image qui designe une api" src="/mylogo/api.svg" className="h-10 w-auto px-9" />
                                 <p className='md:text-left md:px-1 font-bold'>Api building</p>
                             </div>
                             <div className="col-start-2 col-span-2">
@@ -53,7 +53,7 @@ const About = () => {
                         </div>
                         <div className='grid md:grid-cols-4 sm:grid-cols-2'>
                             <div className="md:col-start-1 md:col-span-1">
-                                <img alt="image d'une pile" src="/Trust_logo/poignee-de-main.svg" className="h-10 w-auto px-9" />
+                                <img alt="image d'une pile" src="/mylogo/poignee-de-main.svg" className="h-10 w-auto px-9" />
                                 <p className='text-left px-9 font-bold'>Trust</p>
                             </div>
                             <div className="col-start-2 col-span-2">
@@ -62,7 +62,7 @@ const About = () => {
                         </div>
                         <div className='grid md:grid-cols-4 sm:grid-cols-2'>
                             <div className="md:col-start-1 md:col-span-1">
-                                <img alt="image d'une pile" src="/Trust_logo/couches.svg" className="h-10 w-auto px-9" />
+                                <img alt="image d'une pile" src="/mylogo/couches.svg" className="h-10 w-auto px-9" />
                                 <p className='md:text-left md:px-4 font-bold'>Architecture</p>
                             </div>
                             <div className="col-start-2 col-span-2">
@@ -71,7 +71,7 @@ const About = () => {
                         </div>
                         <div className='grid md:grid-cols-4 sm:grid-cols-2'>
                             <div className="col-start-1 col-span-1">
-                                <img alt="Image de baleine" src="/Trust_logo/baleine.svg" className="h-10 w-auto px-9" />
+                                <img alt="Image de baleine" src="/mylogo/baleine.svg" className="h-10 w-auto px-9" />
                                 <p className='md:text-left md:px-1 font-bold'>Containerization</p>
                             </div>
                             <div className="col-start-2 col-span-2">
@@ -80,7 +80,7 @@ const About = () => {
                         </div>
                         <div className='grid md:grid-cols-4 sm:grid-cols-2'>
                             <div className="col-start-1 col-span-1">
-                                <img alt="Quorix" src="/Trust_logo/picpersonnes-remplies-big.svg" className="h-10 w-auto px-9" />
+                                <img alt="Quorix" src="/mylogo/picpersonnes-remplies-big.svg" className="h-10 w-auto px-9" />
                                 <p className='px-5 text-left font-bold'>expertise</p>
                             </div>
                             <div className="col-start-2 col-span-2 col-start-2">
