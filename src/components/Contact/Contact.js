@@ -111,7 +111,7 @@ const Contact = () => {
                             required
                         />
                     </div>
-                    <div className="md:col-start-3 md:col-span-4 col-start-1 md:mt-10 my-10">
+                    <div className="md:col-start-3 md:col-span-4 col-start-1 md:mt-10 my-10 md:ml-0 ml-10">
                         <button
                             type="submit"
                             className="block md:w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
