@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact-section">
+        <section className="contact-section min-h-screen">
             <div className='all_background'>
                 <p className='text-5xl w-auto rounded-md py-10 text-center font-bold uppercase text-white'>Contact</p>
             </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                 <form action="#" ref={form} method="POST" onSubmit={sendEmail} className="sm:flex-col md:col-start-6 md:col-span-2 grid md:grid-cols-8 md:gap-2 grid-cols-1">
                     {/* First line */}
                     <div className='md:col-start-1 md:col-span-4 col-span-2'>
-                        <label htmlFor="full-name" className="block text-sm/6 font-semibold text-gray-900">
+                        <label htmlFor="full-name" className="block text-sm/6 font-semibold text-gray-900 md:ml-0 ml-10">
                             Full name *
                         </label>
                         <input
@@ -69,12 +69,12 @@ const Contact = () => {
                             name="full-name"
                             type="text"
                             autoComplete="given-name"
-                            className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                            className="block md:w-full md:ml-0 w-3/4 ml-10 rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             required
                         />
                     </div>
                     <div className='md:col-start-5 md:col-span-4'>
-                        <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-900">
+                        <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-900 md:ml-0 ml-10">
                             Company
                         </label>
                         <input
@@ -82,11 +82,11 @@ const Contact = () => {
                             name="company"
                             type="text"
                             autoComplete="given-name"
-                            className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                            className="block md:w-full md:ml-0 w-3/4 ml-10 rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                         />
                     </div>
                     <div className='col-start-1 md:col-span-8 col-span-1'>
-                        <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900">
+                        <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900 md:ml-0 ml-10">
                             Email *
                         </label>
                         <input
@@ -94,19 +94,19 @@ const Contact = () => {
                             name="email"
                             type="email"
                             autoComplete="given-name"
-                            className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                            className="block md:w-full md:ml-0 w-3/4 ml-10 rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             required
                         />
                     </div>
                     <div className='col-start-1 md:col-span-8'>
-                        <label htmlFor="message" name="user_email" className="block text-sm/6 font-semibold text-gray-900">
+                        <label htmlFor="message" name="user_email" className="block text-sm/6 font-semibold text-gray-900 md:ml-0 ml-10">
                             Message
                         </label>
                         <textarea
                             id="message"
                             name="message"
                             rows={4}
-                            className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                            className="block md:w-full md:ml-0 w-3/4 ml-10 rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             defaultValue={''}
                             required
                         />
@@ -114,7 +114,7 @@ const Contact = () => {
                     <div className="md:col-start-3 md:col-span-4 col-start-1 md:mt-10 my-10">
                         <button
                             type="submit"
-                            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            className="block md:w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                             Let's talk
                         </button>
                     </div>

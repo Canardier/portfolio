@@ -45,6 +45,11 @@
         /* (HL, HR, MR, LR, MM, LG, MG, HG) */
     }
 
+    .sm-desc-trust {
+        position: absolute;
+        left: 150px;
+    }
+
     .picme {
         height: 300px;
         width: 200px;
