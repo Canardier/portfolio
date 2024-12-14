@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -35,11 +35,11 @@ export default function Header() {
 
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex shrink-0 items-center">
-                            <img
+                            <Link to='/CV_neutre.pdf' target="_blank" download><img
                                 alt="Quorix"
                                 src={`${process.env.PUBLIC_URL}/mylogo/canard.png`}
                                 className="h-8 w-auto"
-                            />
+                            /></Link>
                             <p className="h-8 w-auto rounded-md px-3 py-2 text-sm font-medium">Studer J.</p>
                         </div>
                     </div>
