@@ -3,6 +3,7 @@ import './Header.css';
 import { useLocation, Link } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import DownloadLink from "react-download-link";
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -14,6 +15,16 @@ const navigation = [
 function Navbar(...classes) {
     return classes.filter(Boolean).join(' ')
 }
+
+const dlvc = () => {
+    const pdfUrl = "CV_neutre.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "CV_neutre.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
 
 export default function Header() {
     const location = useLocation();
@@ -35,11 +46,12 @@ export default function Header() {
 
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex shrink-0 items-center">
-                            <Link to='/CV_neutre.pdf' target="_blank" download><img
+                            <img
+                                onClick={dlvc}
                                 alt="Quorix"
                                 src={`${process.env.PUBLIC_URL}/mylogo/canard.png`}
                                 className="h-8 w-auto"
-                            /></Link>
+                            />
                             <p className="h-8 w-auto rounded-md px-3 py-2 text-sm font-medium">Studer J.</p>
                         </div>
                     </div>
