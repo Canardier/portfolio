@@ -145,20 +145,20 @@ const About = () => {
                         <h2 className='text-2xl font-bold'>FORMATION</h2>
                         <ul>
                             <li>
-                                <p className='italic text-sm'>2019 - 2020</p>
                                 <p className='font-bold text-base'>Développeur projet Web&Mobile</p>
+                                <p className='italic text-sm'>2019 - 2020</p>
                             </li>
                             <li>
-                                <p className='italic text-sm'>2020 - 2021</p>
                                 <p className='font-bold text-base'>Bachelor Concepteur projets SI</p>
-                            </li>
-                            <li>
                                 <p className='italic text-sm'>2020 - 2021</p>
-                                <p className='font-bold text-base'>Chef de projet IT</p>
                             </li>
                             <li>
-                                <p className='italic text-sm'>2021 - 2023</p>
+                                <p className='font-bold text-base'>Chef de projet IT</p>
+                                <p className='italic text-sm'>2020 - 2021</p>
+                            </li>
+                            <li>
                                 <p className='font-bold text-base'>Master architecte en ingénierie système réseau ISR</p>
+                                <p className='italic text-sm'>2021 - 2023</p>
                             </li>
                         </ul>
                     </div>
