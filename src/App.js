@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 
 /*ROOTING*/
-import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 /*COMPONENTS*/

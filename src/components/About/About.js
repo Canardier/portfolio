@@ -95,16 +95,16 @@ const About = () => {
                         <h2 className='uppercase text-2xl font-bold'>EXPERIENCE</h2>
                         <ul>
                             <li>
-                                <p className='italic text-sm'>2019 - 2021</p>
                                 <p className='font-bold text-base'>Consultant @ CRM Newbound</p>
+                                <p className='italic text-sm'>2019 - 2021</p>
                             </li>
                             <li>
-                                <p className='italic text-sm'>2021 - 2021</p>
                                 <p className='font-bold text-base'>AppOps @ CAGIP</p>
+                                <p className='italic text-sm'>2021 - 2021</p>
                             </li>
                             <li>
-                                <p className='italic text-sm'>2021 - 2023</p>
                                 <p className='font-bold text-base'>Developpeur @ FullStack Memories France</p>
+                                <p className='italic text-sm'>2021 - 2023</p>
                             </li>
                         </ul>
                     </div>
